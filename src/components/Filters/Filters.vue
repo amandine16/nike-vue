@@ -83,11 +83,11 @@
             <li
               v-for="(color, index) in colors"
               :style="{
-                color: activeColor[index],
+                backgroundColor: activeColor[index],
               }"
               :key="index"
             >
-              {{ color }}
+              <!-- {{ color }} -->
             </li>
           </ul>
         </div>
