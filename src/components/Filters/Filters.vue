@@ -83,24 +83,7 @@
             <li
               v-for="(color, index) in colors"
               :style="{
-                color:
-                  color === 'noir'
-                    ? 'black'
-                    : color === 'rouge'
-                    ? 'red'
-                    : color === 'blanc'
-                    ? 'grey'
-                    : color === 'jaune'
-                    ? 'yellow'
-                    : color === 'bleu'
-                    ? 'blue'
-                    : color === 'rose'
-                    ? 'pink'
-                    : color === 'vert'
-                    ? 'green'
-                    : color === 'gris'
-                    ? 'grey'
-                    : 'black',
+                color: activeColor[index],
               }"
               :key="index"
             >
