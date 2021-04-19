@@ -154,6 +154,7 @@
 <script>
 import data from "../../assets/data/products.json";
 import OneCard from "../Cards/OneCard";
+// Essaie de création d'un composant pour les input filter (échec)
 // import CheckboxFilter from "../CheckboxFilter";
 
 export default {

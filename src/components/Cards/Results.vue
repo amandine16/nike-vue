@@ -1,4 +1,5 @@
 <template>
+  <!-- Au début j'ai souhaité faire des composants pour chaque filtre, mais ensuite j'ai tout fait directement dans le fichier Filters.vue -->
   <div class="card-deck">
     <div v-for="(result, index) in data" v-bind:key="index" class="card">
       <OneCard
