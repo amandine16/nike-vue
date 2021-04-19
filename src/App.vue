@@ -1,28 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="d-flex flex-wrap container">
+      <div><Filters></Filters></div>
+      <!-- <div class="col-10"><Results v-bind:data="data"></Results></div> -->
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import Results from "./components/Cards/Results";
+import Filters from "./components/Filters/Filters";
+// import data from "./assets/data/products.json";
 
 export default {
-  name: 'App',
+  name: "App",
+  data() {
+    return {
+      // data,
+    };
+  },
   components: {
-    HelloWorld
-  }
-}
+    // Results,
+    Filters,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
